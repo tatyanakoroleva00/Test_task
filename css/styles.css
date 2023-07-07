@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* 16px - 100%  */
+/* 10px - 62.5% */
+/* 1rem = 16px  */
+/* 1rem = 10px  */
+
+/*********************************************/
+
+body {
+    box-sizing: border-box;
+    /*background-image: url(../img/fon1.jpg);*/
+    /*background-color: darkslategray;*/
+}
+.wrapper {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+.item {
+    height: 25rem;
+    margin-bottom: 1rem;
+}
+
+.item {
+    border: 1px solid black;
+}
+.item-1 {
+    width: 100%;
+    order: 1;
+}
+.item-2, .item-3, .item-4 {
+    width: 33.33%;
+}
+.item-2 {
+    background-color: rgb(148, 148, 148);
+    order: 2;
+    border-right: none;
+}
+.item-3 {
+    background-color: rgb(177, 177, 176);
+    order: 3;
+    border: dashed black 1px;
+}
+.item-4 {
+    background-color: rgb(208, 208, 210);
+    order: 4;
+    border-left: none;
+}
+.item-5 {
+    width: 33.33%;
+    order: 5;
+    border-right: none;
+}
+.item-6 {
+    width: 66.66%;
+    order: 6;
+}
+.btn {
+    font-size: 2rem;
+}
+
+.modal-window {
+    display: flex;
+    justify-content: center;
+    display: none;
+    padding: 20rem;
+    border: 1px solid black;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    margin: auto;
+    background-color: orange;
+}
+.cross {
+    position: absolute;
+    top: 0; 
+    right: 1rem;
+    font-size: 3.5rem;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+
+/****************************MEDIAS*************************/
+@media screen and (max-width: 770px) and (orientation: portrait) {
+        .item {
+            width: 100%;
+        }
+}
